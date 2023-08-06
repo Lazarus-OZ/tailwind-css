@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practice</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="box-border">
+    <section class="scetion-layout">
+      <div
+        class="text-white flex flex-row justify-between items-center px-5 py-5 md:flex-row md:justify-between md:px-10 md:py-8"
+      >
+        <div>
+          <h1>LAZARUS</h1>
+        </div>
+        <div class="res-nav" id="navClick">
+          <i class="bi bi-x nav-bi p-5" onclick="hide()"></i>
+          <ul class=" navbar">
+            <li class="nav-menu"><a href="#">HOME</a></li>
+            <li class="nav-menu"><a href="#">CODE</a></li>
+            <li class="nav-menu"><a href="#">PRACTICE</a></li>
+            <li class="nav-menu"><a href="#">ABOUT US</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list nav-bi" onclick="show()"></i>
+      </div>
+      <div class="middle">
+        <h1 class="middle-h1">Welcome to the <span class="text-3xl tracking-widest text-green-500 font-bold md:text-4xl">CLUB</span> </h1>
+        <p class="middle-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est
+          animi obcaecati sed, excepturi deserunt perferendis repellat modi
+          iusto illum?
+        </p>
+        <a href="#" class="middle-a">VISIT US</a>
+      </div>
+    </section>
+
+
+    <script>
+      var x = document.getElementById("navClick");
+
+      function show() {
+        x.style.width = "45%";
+      }
+      function hide() {
+        x.style.width = "0%";
+      }
+    </script>
+  </body>
+</html>

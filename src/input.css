@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold tracking-widest
+    md:text-3xl;
+  }
+}
+
+@layer components {
+  .scetion-layout {
+    @apply w-full h-screen bg-gradient-to-bl from-black from-10% via-gray-800 via-50% to-black to-90%
+
+  }
+  .res-nav{
+    @apply absolute h-screen w-0 top-0 right-0 bg-cyan-900/30 backdrop-blur-sm text-left duration-500 z-20 rounded-3xl
+     md:static md:h-fit md:w-auto md:bg-transparent md:backdrop-blur-0
+  }
+  .navbar {
+    @apply 
+     py-8 text-center flex flex-col
+      md:flex md:flex-row md:py-0
+  }
+  .nav-menu {
+    @apply text-nav-sm py-5 px-[35%]
+        md:text-nav-md md:px-5
+        lg:text-sm lg:px-7
+        hover:text-green-500
+        after:content-[''] after:block after:w-0 after:h-[1px] after:m-auto after:bg-white after:duration-500 
+        hover:after:w-full
+  }
+
+}
+@layer utilities {
+
+    .text-nav-sm{
+        font-size: 10px;
+    }
+    .text-nav-md{
+        font-size: 12px;
+    }
+    .middle{
+      @apply text-white absolute top-1/2 left-1/2
+       -translate-x-1/2 text-center
+    }
+    .middle-h1{
+      @apply pb-4
+    }
+    .middle-p{
+      @apply pb-5
+
+    }
+    .middle-a{
+      @apply text-[9px] duration-500
+      border-2 border-green-500 rounded-lg px-5 py-1 font-bold tracking-widest
+      md:text-sm md:rounded-xl md:px-6 md:py-2 
+      hover:px-8 hover:border-blue-600
+    }
+    .nav-bi{
+      @apply block text-white text-xl 
+      hover:text-green-500 
+      md:hidden
+    }
+
+}
