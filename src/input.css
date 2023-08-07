@@ -42,7 +42,7 @@
         font-size: 12px;
     }
     .middle{
-      @apply text-white absolute top-1/2 left-1/2
+      @apply text-white absolute top-1/3 md:top-1/2 left-1/2
        -translate-x-1/2 text-center
     }
     .middle-h1{
