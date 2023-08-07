@@ -31,17 +31,7 @@
         after:content-[''] after:block after:w-0 after:h-[1px] after:m-auto after:bg-white after:duration-500 
         hover:after:w-full
   }
-
-}
-@layer utilities {
-
-    .text-nav-sm{
-        font-size: 10px;
-    }
-    .text-nav-md{
-        font-size: 12px;
-    }
-    .middle{
+  .middle{
       @apply text-white absolute top-1/3 md:top-1/2 left-1/2
        -translate-x-1/2 text-center
     }
@@ -63,5 +53,16 @@
       hover:text-green-500 
       md:hidden
     }
+
+}
+@layer utilities {
+
+    .text-nav-sm{
+        font-size: 10px;
+    }
+    .text-nav-md{
+        font-size: 12px;
+    }
+    
 
 }
