@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-full h-auto m-0 p-0 sm:overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,17 +12,20 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="box-border overflow-hidden">
-    <section class="scetion-layout">
+  <body class="box-border w-full h-auto m-0 p-0 overflow-x-hidden">
+    <!-- Header Section -->
+    <section class="scetion-layout overflow-x-hidden">
       <div
         class="text-white flex flex-row justify-between items-center px-5 py-5 md:flex-row md:justify-between md:px-10 md:py-8"
       >
         <div>
           <h1>LAZARUS</h1>
+          <!--LOGO-->
         </div>
         <div class="res-nav" id="navClick">
           <i class="bi bi-x nav-bi p-5" onclick="hide()"></i>
-          <ul class=" navbar">
+          <!--Icon-->
+          <ul class="navbar">
             <li class="nav-menu"><a href="#">HOME</a></li>
             <li class="nav-menu"><a href="#">CODE</a></li>
             <li class="nav-menu"><a href="#">PRACTICE</a></li>
@@ -30,19 +33,63 @@
           </ul>
         </div>
         <i class="bi bi-list nav-bi" onclick="show()"></i>
+        <!--Icon-->
       </div>
       <div class="middle">
-        <h1 class="middle-h1">Welcome to the <span class="text-3xl tracking-widest text-green-500 font-bold md:text-4xl">CLUB</span> </h1>
+        <h1 class="middle-h1">
+          Welcome to the
+          <span
+            class="text-3xl tracking-widest text-green-500 font-bold md:text-4xl"
+            >CLUB</span
+          >
+        </h1>
         <p class="middle-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est
           animi obcaecati sed, excepturi deserunt perferendis repellat modi
           iusto illum?
         </p>
         <a href="#" class="middle-a">VISIT US</a>
+        <!--Button-->
       </div>
     </section>
 
+    <!-- .......Course Section.......... -->
+    <section class="h-auto bg-slate-800 flex flex-col justify-center items-center overflow-x-hidden">
+      <div class="course-heading">
+        <h1 class="course-heading-h1">OUR <span class="text-green-500">COURSES</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, iusto!
+        </p>
+      </div>
+      <div class="course-section">
+        <div class="course-box">
+          <h1 class="course-box-h1">Machine Learning</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod hic
+            deleniti aliquid nam odit ea quaerat, expedita dolorem! Impedit,
+            eius!
+          </p>
+        </div>
+        <div class="course-box">
+          <h1 class="course-box-h1">Cyber Security</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            tenetur, sapiente mollitia illo cum animi perferendis quaerat porro
+            assumenda ut.
+          </p>
+        </div>
+        <div class="course-box">
+          <h1 class="course-box-h1">Cloud Engineering</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            tenetur, sapiente mollitia illo cum animi perferendis quaerat porro
+            assumenda ut.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Javascript -->
     <script>
       var x = document.getElementById("navClick");
 
