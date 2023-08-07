@@ -683,6 +683,14 @@ h1 {
 
 .middle-p {
   padding-bottom: 1.25rem;
+  font-size: 9px;
+}
+
+@media (min-width: 768px) {
+  .middle-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .middle-a {
