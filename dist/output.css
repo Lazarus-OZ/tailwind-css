@@ -551,6 +551,8 @@ h1 {
 .scetion-layout {
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
   --tw-gradient-from: #000 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
