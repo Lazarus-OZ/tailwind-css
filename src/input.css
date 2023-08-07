@@ -16,8 +16,8 @@
 
   }
   .res-nav{
-    @apply absolute h-screen w-0 top-0 right-0 bg-cyan-900/30 backdrop-blur-sm text-left duration-500 z-20 rounded-3xl
-     md:static md:h-fit md:w-auto md:bg-transparent md:backdrop-blur-0
+    @apply absolute h-screen w-0 top-0 right-0 bg-cyan-900/30 backdrop-blur-sm text-left duration-500 z-20 rounded-3xl overflow-hidden
+     md:static md:h-fit md:w-auto md:bg-transparent md:backdrop-blur-0 md:overflow-hidden
   }
   .navbar {
     @apply 
