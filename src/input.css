@@ -62,7 +62,7 @@
     }
 
       .course-heading-h1{
-        @apply text-white tracking-[10px] pb-4
+        @apply text-white tracking-[10px] pb-4 font-extrabold
       }
     
 
@@ -74,14 +74,56 @@
 
     .course-box{
       @apply flex flex-col justify-center items-center border border-2 text-[9px] border-slate-500 w-[50%] h-auto p-4 my-7 
-      rounded-3xl text-gray-300
+      rounded-3xl text-gray-300 duration-500
       md:w-[29%] md:h-[35vh] md:mx-4 md:text-[15px]
+      hover:shadow-green-500 hover:shadow-[[0px_0px_0px_20px_1px_rgba(0,0,0,1)]] 
+      hover:border-transparent
       
     }
     .course-box-h1{
       @apply pb-5 text-green-500
       md:text-3xl 
 
+      }
+      /* Facilities */
+      .fac-heading{
+        @apply text-gray-400 text-center text-[9px] mt-7
+      md:text-base
+      }
+      .fac-heading-h1{
+        @apply text-white tracking-[10px] pb-4 font-extrabold
+      }
+
+
+      .facility{
+        @apply bg-slate-800 w-full h-auto m-auto text-center  overflow-hidden
+      }
+      
+      .fac-box{
+        @apply flex flex-col justify-center items-center my-[5%]
+        md:flex md:flex-row md:justify-evenly
+
+      }
+      .boxes{
+        @apply w-[60%] h-[40vh] border-2 border-gray-400 relative overflow-hidden my-5
+        rounded-3xl
+        md:w-[29%] md:h-[55vh] md:my-0
+      }
+      .box-img{
+        @apply w-full h-full object-cover object-center block
+      }
+
+      .layer{
+        @apply  bg-transparent h-full w-full top-0 left-0 absolute duration-500
+        hover:bg-cyan-950/30 hover:backdrop-blur-[5px]
+        
+        
+      }
+      .layer-h1{
+        @apply text-white text-[1rem] md:text-xl bottom-0 left-1/2 translate-x-[-50%]
+        absolute border border-green-500 p-3 opacity-0 duration-500
+        group-hover:bottom-[40%] group-hover:opacity-100
+        
       }
 
 }
