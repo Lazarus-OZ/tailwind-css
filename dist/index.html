@@ -12,14 +12,14 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="box-border w-full h-auto m-0 p-0 overflow-x-hidden">
+  <body class="box-border w-full h-auto m-0 p-0 overflow-x-hidden selection:bg-green-800 selection:text-white">
     <!-- Header Section -->
     <section class="scetion-layout overflow-x-hidden">
       <div
         class="text-white flex flex-row justify-between items-center px-5 py-5 md:flex-row md:justify-between md:px-10 md:py-8"
       >
         <div>
-          <h1>LAZARUS</h1>
+          <h1 class="duration-500 hover:text-green-500 cursor-pointer">LAZARUS</h1>
           <!--LOGO-->
         </div>
         <div class="res-nav" id="navClick">
@@ -124,6 +124,28 @@
         </div>
       </div>
     </section>
+
+    <section class="connect-section">
+      <div class="form-bg">
+        <div>
+          <h1 class="form-h1">Join <span class="text-green-500">Community</span> </h1>
+        </div>
+        <div>
+          <label class="form-label" for="name">Enter Name</label><br>
+          <input class="form-input" type="text" id="name" placeholder="Name" required><br>
+          <label class="form-label" for="email">Enter Email</label><br>
+          <input class="form-input" type="email" id="email" placeholder="xyz@email.com" required><br>
+          <label class="form-label" for="mobile">Enter Mobile Number</label><br>
+          <input class="form-input" type="phone" id="mobile" placeholder="+088 01..." required><br>
+          <label class="form-label" for="pass">Enter Password</label><br>
+          <input class="form-input" type="password" id="pass" placeholder="Password" required><br>
+          <div class="submit">
+          <input class="form-submit" type="submit" value="SUBMIT"><br>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- Javascript -->
     <script>

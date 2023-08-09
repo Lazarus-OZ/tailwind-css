@@ -87,13 +87,12 @@
       }
       /* Facilities */
       .fac-heading{
-        @apply text-gray-400 text-center text-[9px] mt-7
-      md:text-base
+        @apply text-center text-gray-400  text-[9px] mt-7
+         md:text-base
       }
       .fac-heading-h1{
-        @apply text-white tracking-[10px] pb-4 font-extrabold
+        @apply text-white  tracking-[10px]  pb-4 font-extrabold
       }
-
 
       .facility{
         @apply bg-slate-800 w-full h-auto m-auto text-center  overflow-hidden
@@ -124,6 +123,41 @@
         absolute border border-green-500 p-3 opacity-0 duration-500
         group-hover:bottom-[40%] group-hover:opacity-100
         
+      }
+
+      /* Connect Section */
+
+      .connect-section{
+        @apply flex flex-col justify-center items-center w-full h-[100vh] 
+        bg-[url('../image/form.jpg')] bg-cover bg-center bg-no-repeat
+        md:h-[90vh]
+      }
+      .form-bg{
+        @apply flex flex-col justify-center   text-white text-center
+        border-2 border-transparent w-[90%] h-[80vh] backdrop-blur-[5px]
+        md:h-[77vh]
+        shadow-2xl shadow-black shadow-[[0px_0px_0px_30px_10px_rgba(0,0,0,1)]]
+      }
+      .form-h1{
+        @apply pb-6
+      }
+
+      .form-label{
+        @apply  text-[10px] my-3
+        md:text-base
+      }
+      .form-input{
+        @apply bg-transparent w-[50%] outline-none my-5
+         border-t-0 border-l-0 border-r-0 border-b-2
+         placeholder:text-gray-500 placeholder:text-[9px]
+         md:placeholder:text-base
+        
+      }
+      .form-submit{
+        @apply text-[12px] w-[30%] border-2 border-gray-700 my-4 p-2 rounded-full
+        md:p-3 md:text-base duration-500
+        bg-gradient-to-bl from-black from-10% via-cyan-950 via-50% to-black to-90%
+        hover:w-[50%] hover:text-cyan-400
       }
 
 }
